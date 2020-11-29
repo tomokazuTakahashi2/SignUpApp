@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,12 @@
 		6467E2C02572F4CD00682FD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6467E2BE2572F4CD00682FD4 /* Main.storyboard */; };
 		6467E2C22572F4D300682FD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6467E2C12572F4D300682FD4 /* Assets.xcassets */; };
 		6467E2C52572F4D300682FD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6467E2C32572F4D300682FD4 /* LaunchScreen.storyboard */; };
+		6467E2CD2572FD7700682FD4 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6467E2CC2572FD7700682FD4 /* UIColorExtension.swift */; };
+		6467E2CF257306F400682FD4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6467E2CE257306F400682FD4 /* GoogleService-Info.plist */; };
+		6467E2D125731D6400682FD4 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6467E2D025731D6400682FD4 /* Model.swift */; };
+		6467E2D32573235100682FD4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6467E2D22573235100682FD4 /* HomeViewController.swift */; };
+		6467E2D5257369B400682FD4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6467E2D4257369B400682FD4 /* LoginViewController.swift */; };
+		CC61CB9D91C6B2DC0DB4CF35 /* Pods_SignUpApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75D9267CE3EF41973AA72FD6 /* Pods_SignUpApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,14 @@
 		6467E2C12572F4D300682FD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6467E2C42572F4D300682FD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6467E2C62572F4D300682FD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6467E2CC2572FD7700682FD4 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		6467E2CE257306F400682FD4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6467E2D025731D6400682FD4 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		6467E2D22573235100682FD4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		6467E2D4257369B400682FD4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		71CF22E27D3161348687B4D7 /* Pods-SignUpApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignUpApp.release.xcconfig"; path = "Target Support Files/Pods-SignUpApp/Pods-SignUpApp.release.xcconfig"; sourceTree = "<group>"; };
+		75D9267CE3EF41973AA72FD6 /* Pods_SignUpApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SignUpApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8823010DF88C937CA6C03A88 /* Pods-SignUpApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignUpApp.debug.xcconfig"; path = "Target Support Files/Pods-SignUpApp/Pods-SignUpApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +45,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC61CB9D91C6B2DC0DB4CF35 /* Pods_SignUpApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17009D041378D9AF3B99E5CB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8823010DF88C937CA6C03A88 /* Pods-SignUpApp.debug.xcconfig */,
+				71CF22E27D3161348687B4D7 /* Pods-SignUpApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		35CCBB161D9EC7508C089B75 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				75D9267CE3EF41973AA72FD6 /* Pods_SignUpApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6467E2AC2572F4CC00682FD4 = {
 			isa = PBXGroup;
 			children = (
 				6467E2B72572F4CD00682FD4 /* SignUpApp */,
 				6467E2B62572F4CD00682FD4 /* Products */,
+				17009D041378D9AF3B99E5CB /* Pods */,
+				35CCBB161D9EC7508C089B75 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,11 +92,16 @@
 			children = (
 				6467E2B82572F4CD00682FD4 /* AppDelegate.swift */,
 				6467E2BA2572F4CD00682FD4 /* SceneDelegate.swift */,
+				6467E2D025731D6400682FD4 /* Model.swift */,
 				6467E2BC2572F4CD00682FD4 /* ViewController.swift */,
+				6467E2D4257369B400682FD4 /* LoginViewController.swift */,
+				6467E2D22573235100682FD4 /* HomeViewController.swift */,
+				6467E2CC2572FD7700682FD4 /* UIColorExtension.swift */,
 				6467E2BE2572F4CD00682FD4 /* Main.storyboard */,
 				6467E2C12572F4D300682FD4 /* Assets.xcassets */,
 				6467E2C32572F4D300682FD4 /* LaunchScreen.storyboard */,
 				6467E2C62572F4D300682FD4 /* Info.plist */,
+				6467E2CE257306F400682FD4 /* GoogleService-Info.plist */,
 			);
 			path = SignUpApp;
 			sourceTree = "<group>";
@@ -74,9 +113,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6467E2C92572F4D300682FD4 /* Build configuration list for PBXNativeTarget "SignUpApp" */;
 			buildPhases = (
+				DF84F7A25E16E6CEECF6730C /* [CP] Check Pods Manifest.lock */,
 				6467E2B12572F4CD00682FD4 /* Sources */,
 				6467E2B22572F4CD00682FD4 /* Frameworks */,
 				6467E2B32572F4CD00682FD4 /* Resources */,
+				4C6B4DA9A714624AB2DAD59B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6467E2C52572F4D300682FD4 /* LaunchScreen.storyboard in Resources */,
+				6467E2CF257306F400682FD4 /* GoogleService-Info.plist in Resources */,
 				6467E2C22572F4D300682FD4 /* Assets.xcassets in Resources */,
 				6467E2C02572F4CD00682FD4 /* Main.storyboard in Resources */,
 			);
@@ -133,14 +175,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4C6B4DA9A714624AB2DAD59B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SignUpApp/Pods-SignUpApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SignUpApp/Pods-SignUpApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SignUpApp/Pods-SignUpApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF84F7A25E16E6CEECF6730C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SignUpApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6467E2B12572F4CD00682FD4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6467E2D5257369B400682FD4 /* LoginViewController.swift in Sources */,
+				6467E2D125731D6400682FD4 /* Model.swift in Sources */,
 				6467E2BD2572F4CD00682FD4 /* ViewController.swift in Sources */,
 				6467E2B92572F4CD00682FD4 /* AppDelegate.swift in Sources */,
 				6467E2BB2572F4CD00682FD4 /* SceneDelegate.swift in Sources */,
+				6467E2CD2572FD7700682FD4 /* UIColorExtension.swift in Sources */,
+				6467E2D32573235100682FD4 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +370,7 @@
 		};
 		6467E2CA2572F4D300682FD4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8823010DF88C937CA6C03A88 /* Pods-SignUpApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -294,12 +383,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jp.tomokazu.takahashi.SignUpApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		6467E2CB2572F4D300682FD4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71CF22E27D3161348687B4D7 /* Pods-SignUpApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -312,7 +402,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jp.tomokazu.takahashi.SignUpApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
